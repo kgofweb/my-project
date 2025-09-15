@@ -33,7 +33,7 @@
 
 /* ========== GLOBAL ========== */
 * {
-   color: var(--dark-color) !important;
+   /* color: var(--dark-color) !important; */
    font-family: 'Lato';
    list-style: none;
    text-decoration: none !important;
