@@ -33,5 +33,4 @@ if (navClose) {
 const linkAction = () => {
    navMenu.classList.remove('show_menu')
 }
-
 navLink.forEach(el => el.addEventListener('click', linkAction))

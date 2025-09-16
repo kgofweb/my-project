@@ -10,21 +10,21 @@
    --white-color: #FFFFFF;
 
    /* ======= Font weight ======= */
-   --bold-font-weight: 800;
+   --bold-font-weight: 900;
    --semi-bold-font-weight: 600;
    --little-bold-font-weight: 500;
 
    /* ======= Font size ======= */
-   --first-big-font-size: 1.7rem;
+   --first-big-font-size: 1.9rem;
    --mobile-font-icons: 1.5rem;
-   --big-font-size: 1.3rem;
+   --big-font-size: 1.2rem;
    --small-font-size: 1rem;
    --very-small-font-size: .750rem;
 
    /* ======= Height ======= */
    --global-height: 100vh;
-   --header-height: 4rem;
-   --header-height-mobile: 6vh;
+   --header-height: 8vh;
+   --header-height-mobile: 7vh;
 
    /* ======= Z index ======= */
    --z-tooltip: 30;
