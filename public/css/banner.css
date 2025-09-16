@@ -5,17 +5,50 @@
    flex-direction: column;
 }
 .banner .container {
+   position: relative;
    justify-content: center;
    width: 65%;
-   height: calc(var(--global-height) - var(--header-height));
    margin: auto;
+   height: calc(var(--global-height) - var(--header-height));
+}
+.banner .container .banner__socialMedia {
+   position: absolute;
+   top: 30px;
+   left: 8px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.banner .container .banner__socialMedia a {
+   color: var(--dark-color);
+   font-size: var(--mobile-font-icons);
+}
+.banner .container .banner__name {
+   margin-bottom: 1rem;
+}
+.banner .container .banner__name span:first-child {
+   color: var(--dark-color);
+}
+.banner .container .banner__name span:last-child {
+   font-size: var(--first-big-font-size);
+   font-weight: var(--bold-font-weight);
+}
+.banner .container .banner__img__content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 26%;
+   background-color: var(--white-color);
 }
 .banner .container .banner__img {
    display: block;
-   width: 25%;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
    border-radius: 15rem;
    border: 1px solid var(--dark-color);
    padding: .5rem;
+   z-index: var(--z-fixed);
 }
 .banner .container .banner__content {
    margin-top: 1.5rem;
@@ -24,13 +57,6 @@
 }
 .banner .container .banner__content div {
    padding-bottom: 1.1rem;
-}
-.banner .container .banner__content .banner__name span:first-child {
-   color: var(--dark-color);
-}
-.banner .container .banner__content .banner__name span:last-child {
-   font-size: var(--first-big-font-size);
-   font-weight: var(--bold-font-weight);
 }
 .banner .container .banner__content .banner__workPost,
 .banner .container .banner__content .banner__description {
@@ -41,20 +67,55 @@
 }
 .banner .container .banner__content .banner__workPost span {
    border-bottom: .3rem solid var(--blue-color);
+   transition: .6s ease-in-out;
+}
+.banner .container .banner__content .banner__workPost span:hover {
+   color: var(--white-color);
+   background-color: var(--blue-color);
 }
 .banner .container .banner__content .banner__description {
    width: 65%;
    margin: auto;
 }
+.banner .container .banner__content .banner__btn button {
+   width: 12rem;
+   height: 3.5rem;
+   border-radius: .8rem;
+   outline: none;
+   border: none;
+   font-weight: var(--semi-bold-font-weight);
+}
+.banner .container .banner__content .banner__btn button:first-child {
+   color: var(--white-color);
+   background-color: var(--dark-color);
+   margin-right: 1rem;
+}
+.banner .container .banner__content .banner__btn button:last-child {
+   border: .1rem solid var(--dark-color);
+}
 
+/* ======================= Mobile devises ======================= */
 @media screen and (max-width: 1250px) {
    .banner .container {
       height: calc(var(--global-height) - var(--header-height-mobile));
       width: 100%;
       margin: auto;
    }
-   .banner .container .banner__img {
-      width: 35%;
+   .banner .container .banner__img__content  {
+      width: 22%;
+   }
+   .banner .container .banner__content .banner__btn button i {
+      font-size: var(--small-font-size);
+   }
+}
+@media screen and (max-width: 990px) {
+   .banner .container .banner__img__content  {
+      width: 28%;
+   }
+}
+@media screen and (max-width: 767px) {
+   .banner .container .banner__img__content  {
+      width: 45%;
    }
    .banner .container .banner__content .banner__description {
       width: 100%;
@@ -63,7 +124,26 @@
    }
 }
 @media screen and (max-width: 500px) {
-   .banner .container .banner__img {
-      width: 45%;
+   .banner .container .banner__content .banner__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   .banner .container .banner__content .banner__btn button i {
+      font-size: var(--small-font-size);
+   }
+   .banner .container .banner__content .banner__btn button:first-child {
+      margin: .6rem 0;
+   }
+}
+@media screen and (max-width: 376px) {
+   .banner .container .banner__content .banner__btn button {
+      width: 10rem;
+      height: 3rem;
+      border-radius: .8rem;
+      outline: none;
+      border: none;
+      font-weight: var(--semi-bold-font-weight);
    }
 }

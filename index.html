@@ -50,7 +50,7 @@
                      Portfolio
                   </a>
                </li>
-               <li class="menu__item ">
+               <li class="menu__item d-none">
                   <a class="menu__link" href="./">
                      <i class="fa-solid fa-message"></i>
                      Contact
@@ -76,19 +76,39 @@
    <!-- ======================= MAIN ======================= -->
    <section class="banner" id="banner">
       <div class="container">
+         <!-- =========== Banner Social Media =========== -->
+         <div class="banner__socialMedia">
+            <a href="./"><i class="fa-brands fa-github"></i></a>
+            <a href="./"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./"><i class="fa-brands fa-telegram"></i></a>
+         </div>
+         <!-- =========== Banner name =========== -->
+         <div class="banner__name">
+            <span>Hello, I'm</span>
+            <span>Kerol Merveil</span>
+         </div>
          <!-- =========== Banner Image =========== -->
-         <img class="banner__img" src="./public/img/logo/Banner__img.jpg" alt="Portfolio">
+         <div class="banner__img__content">
+            <img class="banner__img" src="./public/img/logo/Banner__img.jpg" alt="Portfolio">
+         </div>
+         <!-- =========== Banner description =========== -->
          <div class="banner__content">
-            <div class="banner__name">
-               <span>Hello, I'm</span>
-               <span>Kerol Merveil</span>
-            </div>
             <div class="banner__workPost">
                <span>Front-end</span> web developper.
                <i class="fa-solid fa-laptop-code"></i>
             </div>
             <div class="banner__description">
                passionate about creating modern, efficient and intuitive web/mobile interfaces
+            </div>
+            <div class="banner__btn">
+               <button>
+                  Download CV
+                  <i class="fa-solid fa-download"></i>
+               </button>
+               <button>
+                  Contact me
+                  <i class="fa-solid fa-message"></i>
+               </button>
             </div>
          </div>
       </div>

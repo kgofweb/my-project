@@ -54,7 +54,7 @@
 }
 
 /* ================ For Mobile devises ================ */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1024px) {
    .header .container {
       width: 95%;
       height: var(--header-height-mobile);
