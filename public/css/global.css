@@ -5,6 +5,8 @@
 :root {
    /* ======= Color ======= */
    --dark-color: #2D2D2D;
+   --light-dark-color: #545454;
+   --light-color: #B5B5B5;
    --blue-color: #0984E3;
    --blue-light-color: #e4f2fd;
    --white-color: #FFFFFF;

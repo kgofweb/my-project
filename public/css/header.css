@@ -9,7 +9,7 @@
    line-height: var(--header-height);
    width: 65%;
    margin: auto;
-   border-bottom: .05rem solid var(--dark-color);
+   border-bottom: .05rem solid var(--light-color);
 }
 .header__logo .logo {
    color: var(--dark-color);
@@ -30,11 +30,11 @@
 .menu .menu__item .menu__link {
    font-weight: var(--semi-bold-font-weight);
    transition: .3s ease-in-out;
-   color: var(--dark-color);
+   color: var(--light-dark-color);
 }
 .menu .menu__item:hover, 
 .menu .menu__item .menu__link:hover {
-   color: var(--blue-color);
+   color: var(--dark-color);
 }
 .menu .menu__item .menu__link i {
    margin-right: .25rem;
