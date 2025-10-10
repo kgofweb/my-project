@@ -15,7 +15,7 @@
    --light-color: #B5B5B5;
    /* --blue-color: #0984E3; */
    --red-color: #6D071A;
-   --red-bordeaux-color: #5c0118;
+   --red-bordeaux-color: #AF5666;
    --blue-light-color: #e4f2fd;
    --white-color: #FFFFFF;
 
@@ -84,6 +84,7 @@ body {
    font-size: var(--normal-font-size);
    margin: var(--header-height) 0 0 0;
    color: var(--dark-color);
+   overflow-x: hidden;
 }
 
 img {
@@ -118,6 +119,7 @@ section {
 
 .grid_container {
    display: grid;
+   align-items: center;
 }
 button {
    display: inline-block;
