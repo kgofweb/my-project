@@ -1,4 +1,31 @@
 .about_content {
-   background-color: lightblue;
-   margin: var(--mg-4) auto;
+   margin: var(--mg-2) auto;
+}
+.about_title_content {
+   text-align: center;
+   margin: var(--mg-4) 0;
+}
+.about_title {
+   font-size: var(--biggest-font-size);
+   font-weight: var(--font-w-bold);
+}
+.about_data {
+   text-align: center;
+}
+.about_data_text {
+   width: 85%;
+   margin: auto;
+   font-size: var(--h5-font-size);
+   line-height: 1.6;
+}
+.about_data_text span {
+   color: var(--red-color);
+   font-weight: var(--font-w-medium);
+}
+
+/* Mobile version */
+@media screen and (max-width: 672px) {
+   .about_data_text {
+      width: 100%;
+   }
 }
