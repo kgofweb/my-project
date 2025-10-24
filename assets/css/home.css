@@ -47,7 +47,10 @@
    height: 50px;
    margin-right: 1rem;
    border-radius: 100%;
-   background-color: var(--blue-light-color);
+   box-shadow: -2px 4px 121px 8px rgba(0,0,0,0.71);
+   box-shadow: -18px -5px 71px -9px rgba(0,0,0,0.8);
+   -webkit-box-shadow: -18px -5px 71px -9px rgba(0,0,0,0.8);
+   -moz-box-shadow: -18px -5px 71px -9px rgba(0,0,0,0.8);
 }
 .home_socialMedia i {
    font-size: var(--h1-font-size);
@@ -55,7 +58,7 @@
    transition: .3s;
 }
 .home_socialMedia i:hover {
-   color: #000;
+   color: var(--red-color);
 }
 .home_img_box {
    justify-self: end;

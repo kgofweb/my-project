@@ -13,7 +13,7 @@
    --dark-color: #343434;
    --light-dark-color: #545454;
    --light-color: #B5B5B5;
-   --red-color: #9A2B40;
+   --red-color: #EE8B00;
    --red-bordeaux-color: #AF5666;
    --blue-light-color: #e4f2fd;
    --white-color: #FFFFFF;
@@ -122,6 +122,15 @@ section {
 .grid_container {
    display: grid;
    align-items: center;
+}
+
+.big_title {
+   font-size: var(--biggest-font-size);
+   font-weight: var(--font-w-bold);
+}
+
+.sub_title {
+   color: var(--red-color);
 }
 button {
    display: inline-block;

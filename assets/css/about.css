@@ -5,27 +5,57 @@
    text-align: center;
    margin: var(--mg-4) 0;
 }
-.about_title {
-   font-size: var(--biggest-font-size);
-   font-weight: var(--font-w-bold);
-}
 .about_data {
    text-align: center;
 }
-.about_data_text {
+.about_data_text, 
+.education {
    width: 85%;
    margin: auto;
+}
+.about_data_text {
    font-size: var(--h5-font-size);
    line-height: 1.6;
 }
 .about_data_text span {
-   color: var(--red-color);
+   color: var(--dark-color);
+   font-weight: var(--font-w-bold);
+}
+.fa-quote-left {
+   font-size: var(--h1-font-size);
+}
+.about_data_content .sub_title {
+   margin: var(--mg-4) 0;
+}
+.education {
+   text-align: start;
+}
+.education_title {
    font-weight: var(--font-w-medium);
+   margin-bottom: var(--mg-2);
+}
+.education_subtitle {
+   color: var(--light-dark-color);
+}
+.ed_one, 
+.ed_two {
+   padding: var(--mg-3) 0;
+   border-bottom: 1px solid var(--light-color);
 }
 
 /* Mobile version */
 @media screen and (max-width: 672px) {
-   .about_data_text {
+   .about_data_text, 
+   .education {
       width: 100%;
+   }
+}
+@media screen and (max-width: 530px) {
+   .education_subtitle {
+      flex-direction: column;
+      align-items: start;
+   }
+   .education_subtitle div:last-child {
+      padding-top: var(--mg-2);
    }
 }
