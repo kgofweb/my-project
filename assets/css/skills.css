@@ -1,3 +1,93 @@
 .skills_content {
    margin: var(--mg-2) auto;
 }
+.skill_title {
+   font-weight: var(--font-w-bold);
+   font-size: var(--h5-font-size);
+   color: var(--dark-color);
+}
+.skill_title i {
+   margin-right: .6rem;
+   color: var(--red-color);
+}
+.skills_data {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: var(--mg-2);
+   margin: var(--mg-2) auto;
+   width: 100%;
+}
+.skill_data {
+   justify-items: center;
+}
+.skill_title {
+   width: 260px;
+   text-align: center;
+   background-color: var(--light-white-color);
+   margin: var(--mg-3) auto;
+   padding: var(--mg-2);
+   border-radius: 15px;
+}
+.front_end,
+.back_end, 
+.design,
+.tools {
+   display: grid;
+   gap: var(--mg-2);
+}
+.front_end {
+   grid-template-columns: repeat(5, 1fr);
+}
+.back_end {
+   grid-template-columns: repeat(5, 1fr);
+}
+.tools {
+   grid-template-columns: repeat(2, 1fr);
+}
+.front_end div, 
+.back_end div,
+.design div,
+.tools div {
+   width: 65px;
+   height: 65px;
+   background-color: var(--flight-white-color);
+   border-radius: .5rem;
+   cursor: pointer;
+}
+.front_end div i, 
+.back_end div i, 
+.design div i,
+.tools div i {
+   font-size: var(--h1-font-size);
+}
+
+/* Mobile Devises */
+@media screen and (max-width: 900px) {
+   .front_end {
+      grid-template-columns: repeat(4, 1fr);
+   }
+   .back_end {
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+@media screen and (max-width: 768px) {
+   .front_end {
+      grid-template-columns: repeat(3, 1fr);
+   }
+   .back_end {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+@media screen and (max-width: 670px) {
+   .skills_data {
+      grid-template-columns: 1fr;
+   }
+   .front_end {
+      width: 100%;
+      justify-items: center;
+   }
+   .back_end {
+      width: 100%;
+      justify-items: center;
+   }
+}

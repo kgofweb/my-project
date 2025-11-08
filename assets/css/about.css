@@ -1,10 +1,6 @@
 .about_content {
    margin: var(--mg-2) auto;
 }
-.about_title_content {
-   text-align: center;
-   margin: var(--mg-4) 0;
-}
 .about_data {
    text-align: center;
 }

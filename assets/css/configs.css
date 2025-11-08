@@ -17,6 +17,8 @@
    --red-bordeaux-color: #AF5666;
    --blue-light-color: #e4f2fd;
    --white-color: #FFFFFF;
+   --light-white-color: #edecec;
+   --flight-white-color: #efefef;
    /* --blue-color: #0984E3; */
    
    /* Font size */
@@ -69,35 +71,28 @@
    box-sizing: border-box;
    font-family: var(--body-font), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 html {
    scroll-behavior: smooth;
 }
-
 li {
    list-style: none;
 }
-
 a {
    text-decoration: none;
 }
-
 body {
    font-size: var(--normal-font-size);
    margin: var(--header-height) 0 0 0;
    color: var(--dark-color);
    overflow-x: hidden;
 }
-
 img {
    max-width: 100%;
    height: auto;
 }
-
 section {
    padding: 1rem 0 1rem;
 }
-
 .container {
    max-width: 960px;
    width: calc(100% - 3rem);
@@ -112,25 +107,25 @@ section {
    align-items: center;
    justify-content: space-between;
 }
-
 .display_center {
    display: flex;
    align-items: center;
    justify-content: center;
 }
-
 .grid_container {
    display: grid;
    align-items: center;
 }
-
 .big_title {
    font-size: var(--biggest-font-size);
    font-weight: var(--font-w-bold);
 }
-
 .sub_title {
    color: var(--red-color);
+}
+.title_content {
+   text-align: center;
+   margin: var(--mg-4) 0;
 }
 button {
    display: inline-block;
