@@ -53,12 +53,88 @@
    background-color: var(--flight-white-color);
    border-radius: .5rem;
    cursor: pointer;
+   transition: .8s;
 }
 .front_end div i, 
 .back_end div i, 
 .design div i,
 .tools div i {
    font-size: var(--h1-font-size);
+   transition: .5s;
+}
+
+.html:hover,
+.js:hover,
+.node:hover,
+.firebase:hover {
+   background-color: var(--dark-color);
+}
+.css:hover,
+.jquery:hover {
+   background-color: #DCF0FF;
+}
+.sass:hover {
+   background-color: #ffdfee;
+}
+.react:hover {
+   background-color: #e5f7fc;
+}
+.bootstrap:hover {
+   background-color: #f0e3ff;
+}
+.tailwind:hover,
+.wordpress:hover {
+   background-color: #c3d3e8;
+}
+.php:hover {
+   background-color: #E2E3FF;
+}
+.php:hover {
+   background-color: #E2E3FF;
+}
+.mysql:hover {
+   background-color: #d8f2f8;
+}
+.html:hover, .html:hover i {
+   color: #FFA500;
+}
+.css:hover i {
+   color: #046CBD;
+}
+.js:hover i {
+   color: #F0DB4F;
+}
+.sass:hover i {
+   color: #CD6799;
+}
+.react:hover i {
+   color: #61DBFB;
+}
+.bootstrap:hover i {
+   color: #8312FA;
+}
+.jquery:hover i {
+   color: #0868AC;
+}
+.tailwind:hover i {
+   color: #3056d3;
+}
+.wordpress:hover i {
+   color: #00749C;
+}
+.php:hover i {
+   color: #474A8A;
+}
+.node:hover i,
+.mongodb:hover i {
+   color: #3C873A;
+}
+.mysql:hover i {
+   color: #00758F;
+}
+.firebase:hover i {
+   color: #FFA611;
+   color: linear-gradient(90deg, rgba(255, 166, 17, 1) 100%, rgba(245, 130, 13, 1) 100%);
 }
 
 /* Mobile Devises */
