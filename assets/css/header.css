@@ -6,6 +6,7 @@
    background-color: var(--white-color);
    height: var(--header-height);
    line-height: var(--header-height);
+   z-index: var(--z-fixed);
 }
 .header_logo {
    font-weight: var(--font-w-bold);

@@ -10,10 +10,14 @@
    margin-right: .6rem;
    color: var(--red-color);
 }
+.skills_cadre {
+   border: .1rem solid var(--light-white-color);
+   border-radius: 20px;
+}
 .skills_data {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: var(--mg-2);
+   gap: var(--mg-3);
    margin: var(--mg-2) auto;
    width: 100%;
 }
@@ -33,23 +37,27 @@
 .design,
 .tools {
    display: grid;
-   gap: var(--mg-2);
+   gap: var(--mg-3);
+   margin: var(--mg-4) auto;
 }
 .front_end {
-   grid-template-columns: repeat(5, 1fr);
+   grid-template-columns: repeat(4, 1fr);
 }
 .back_end {
-   grid-template-columns: repeat(5, 1fr);
+   grid-template-columns: repeat(4, 1fr);
+}
+.design {
+   grid-template-columns: repeat(3, 1fr);
 }
 .tools {
-   grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(3, 1fr);
 }
 .front_end div, 
 .back_end div,
 .design div,
 .tools div {
-   width: 65px;
-   height: 65px;
+   width: 70px;
+   height: 70px;
    background-color: var(--flight-white-color);
    border-radius: .5rem;
    cursor: pointer;
@@ -63,79 +71,57 @@
    transition: .5s;
 }
 
+.front_end div img,
+.back_end div img,
+.design div img,
+.tools div img {
+   width: var(--mg-5);
+}
+
 .html:hover,
-.js:hover,
-.node:hover,
-.firebase:hover {
-   background-color: var(--dark-color);
+.git:hover {
+   filter: drop-shadow(0 0 1.2em #F06529);
+}
+.js:hover {
+   filter: drop-shadow(0 0 1.2em #F0DB4F);
 }
 .css:hover,
 .jquery:hover {
-   background-color: #DCF0FF;
+   filter: drop-shadow(0 0 1.2em #046CBD);
 }
 .sass:hover {
-   background-color: #ffdfee;
+   filter: drop-shadow(0 0 1.2em #CD6799);
 }
-.react:hover {
-   background-color: #e5f7fc;
+.react:hover,
+.api:hover {
+   filter: drop-shadow(0 0 1.2em #61DBFB);
 }
 .bootstrap:hover {
-   background-color: #f0e3ff;
+   filter: drop-shadow(0 0 1.2em #8312FA);
 }
-.tailwind:hover,
 .wordpress:hover {
-   background-color: #c3d3e8;
+   filter: drop-shadow(0 0 1.2em #00749C);
 }
-.php:hover {
-   background-color: #E2E3FF;
+.php:hover,
+.vscode:hover {
+   filter: drop-shadow(0 0 1.2em #44478e);
 }
-.php:hover {
-   background-color: #E2E3FF;
+.mysql:hover,
+.figma:hover {
+   filter: drop-shadow(0 0 1.2em #EE8B00);
 }
-.mysql:hover {
-   background-color: #d8f2f8;
+.node:hover,
+.mongodb:hover {
+   filter: drop-shadow(0 0 1.2em #3C873A);
 }
-.html:hover, .html:hover i {
-   color: #FFA500;
+.prototype:hover {
+   filter: drop-shadow(0 0 1.2em #5a5a5a);
 }
-.css:hover i {
-   color: #046CBD;
+.wireframe:hover,
+.github:hover {
+   filter: drop-shadow(0 0 1.2em #393838);
 }
-.js:hover i {
-   color: #F0DB4F;
-}
-.sass:hover i {
-   color: #CD6799;
-}
-.react:hover i {
-   color: #61DBFB;
-}
-.bootstrap:hover i {
-   color: #8312FA;
-}
-.jquery:hover i {
-   color: #0868AC;
-}
-.tailwind:hover i {
-   color: #3056d3;
-}
-.wordpress:hover i {
-   color: #00749C;
-}
-.php:hover i {
-   color: #474A8A;
-}
-.node:hover i,
-.mongodb:hover i {
-   color: #3C873A;
-}
-.mysql:hover i {
-   color: #00758F;
-}
-.firebase:hover i {
-   color: #FFA611;
-   color: linear-gradient(90deg, rgba(255, 166, 17, 1) 100%, rgba(245, 130, 13, 1) 100%);
-}
+
 
 /* Mobile Devises */
 @media screen and (max-width: 900px) {
@@ -146,7 +132,7 @@
       grid-template-columns: repeat(4, 1fr);
    }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
    .front_end {
       grid-template-columns: repeat(3, 1fr);
    }

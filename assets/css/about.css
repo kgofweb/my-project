@@ -36,7 +36,7 @@
 .ed_one, 
 .ed_two {
    padding: var(--mg-3) 0;
-   border-bottom: 1px solid var(--light-color);
+   border-bottom: 1px solid var(--light-dark-color);
 }
 
 /* Mobile version */

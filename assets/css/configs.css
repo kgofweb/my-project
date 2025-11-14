@@ -126,6 +126,7 @@ section {
 .title_content {
    text-align: center;
    margin: var(--mg-4) 0;
+   filter: drop-shadow(0 -5mm 4mm rgb(255, 129, 2));
 }
 button {
    display: inline-block;

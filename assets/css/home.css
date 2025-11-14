@@ -47,10 +47,11 @@
    height: 50px;
    margin-right: 1rem;
    border-radius: 100%;
-   box-shadow: -2px 4px 121px 8px rgba(0,0,0,0.71);
+   /* box-shadow: -2px 4px 121px 8px rgba(0,0,0,0.71);
    box-shadow: -18px -5px 71px -9px rgba(0,0,0,0.8);
    -webkit-box-shadow: -18px -5px 71px -9px rgba(0,0,0,0.8);
-   -moz-box-shadow: -18px -5px 71px -9px rgba(0,0,0,0.8);
+   -moz-box-shadow: -18px -5px 71px -9px rgba(0,0,0,0.8); */
+   filter: drop-shadow(0 -3mm 3mm rgb(255, 129, 2));
 }
 .home_socialMedia i {
    font-size: var(--h1-font-size);
