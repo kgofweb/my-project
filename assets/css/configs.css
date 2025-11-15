@@ -140,3 +140,66 @@ button {
    border-radius: .5rem;
    transition: .4s;
 }
+
+/* Dark Mode */
+.darkMode {
+   --body-color: #171d22;
+   --title-color: #F1F3F2;
+   --text-color: #F1F3F2;
+}
+body.darkMode {
+   color: var(--text-color);
+   background-color: var(--body-color);
+   transition: .5s;
+}
+/* ======== HEADER ======== */
+body.darkMode .header {
+   background-color: var(--body-color);
+}
+body.darkMode .header,
+body.darkMode .header_logo,
+body.darkMode .menu_link {
+   color: var(--text-color);
+}
+body.darkMode .menu_link:hover {
+   color: var(--red-color);
+}
+@media screen and (max-width: 768px) {
+   body.darkMode .menu {
+      background-color: var(--body-color);
+   }
+}
+
+/* ======== HOME ======== */
+body.darkMode .home_title span {
+   color: var(--text-color);
+}
+body.darkMode .home_socialMedia i {
+   color: var(--text-color);
+}
+body.darkMode .home_socialMedia i:hover {
+   color: var(--red-color);
+}
+body.darkMode .home_btn {
+   color: var(--body-color);
+   background-color: var(--text-color);
+}
+body.darkMode .home_btn:hover {
+   color: var(--text-color);
+   background-color: var(--red-color);
+   font-weight: var(--font-w-bold);
+}
+
+/* ======== ABOUT ======== */
+body.darkMode .about_data_text span {
+   color: var(--red-color);
+}
+body.darkMode .education_subtitle {
+   color: var(--text-color);
+}
+body.darkMode .ed_one,
+body.darkMode .ed_two {
+   border-bottom: 1px solid var(--text-color);
+}
+
+/* ======== SKILLS ======== */

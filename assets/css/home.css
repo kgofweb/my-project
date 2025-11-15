@@ -7,8 +7,10 @@
 .home_title {
    flex-direction: column;
 }
+.home_title span {
+   color: var(--dark-color);
+}
 .home_title span:last-child {
-   color: #000;
    font-size: var(--biggest-font-size);
    font-weight: var(--font-w-bold);
 }
