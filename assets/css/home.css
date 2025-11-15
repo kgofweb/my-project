@@ -56,7 +56,7 @@
    filter: drop-shadow(0 -3mm 3mm rgb(255, 129, 2));
 }
 .home_socialMedia i {
-   font-size: var(--h1-font-size);
+   font-size: var(--biggest-font-size);
    color: var(--dark-color);
    transition: .3s;
 }
@@ -82,6 +82,9 @@
 }
 @media screen and (max-width: 638px) {
    .home_title span:last-child {
+      font-size: var(--big-font-size);
+   }
+   .home_socialMedia i {
       font-size: var(--big-font-size);
    }
 }
