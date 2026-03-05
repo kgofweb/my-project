@@ -8,6 +8,7 @@
   flex-direction: column;
 }
 .home_title span {
+  font-weight: var(--font-w-bold);
   color: var(--dark-color);
 }
 .home_title span:last-child {
@@ -21,12 +22,13 @@
 .home_workPost span {
   border-bottom: 5px solid var(--red-color);
   text-transform: uppercase;
-  font-weight: var(--font-w-medium);
+  font-weight: var(--font-w-bold);
 }
 .home_description {
-  font-size: var(--h4-font-size);
+  font-size: var(--h3-font-size);
   margin-top: var(--mg-4);
   margin-bottom: var(--mg-2);
+  font-weight: var(--font-w-light);
 }
 .home_btn {
   background-color: var(--dark-color);
@@ -64,12 +66,12 @@
     var(--blue-color)
   );
   padding: 3px;
-  border-radius: 0.6rem;
+  border-radius: 0.8rem;
   z-index: -1;
   animation: 4s spin linear infinite;
 }
 .home_btn::after {
-  filter: blur(1rem);
+  filter: blur(.5rem);
 }
 /* Border animation */
 @keyframes spin {

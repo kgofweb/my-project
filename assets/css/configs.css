@@ -1,5 +1,5 @@
 /* Font Fam */
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 /* Variables */
 :root {
@@ -7,7 +7,7 @@
   --header-height: 3rem;
 
   /* Font family */
-  --body-font: "Lato";
+  --body-font: "Quicksand";
 
   /* Colors */
   --dark-color: #343434;
@@ -35,6 +35,7 @@
   /* Font weight */
   --font-w-bold: 900;
   --font-w-medium: 600;
+  --font-w-light: 500;
 
   /* Margins */
   --mg-1: 0.3rem;
@@ -138,7 +139,7 @@ button {
   color: var(--white-color);
   font-weight: var(--font-w-bold);
   margin-bottom: var(--mb-2);
-  border-radius: 0.6rem;
+  border-radius: .8rem;
   transition: 0.4s;
 }
 
