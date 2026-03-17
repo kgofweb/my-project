@@ -1,3 +1,61 @@
 .portfolio_content {
   margin: var(--mg-2) auto;
 }
+.portfolio_project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--mg-4);
+  margin: var(--mg-2) auto;
+  width: 100%;
+}
+.project {
+  padding: 20px 20px 0 20px;
+  background-color: var(--flight-white-color);
+  border-radius: 40px;
+}
+.project_img {
+  border-radius: 25px;
+}
+.project_content {
+  margin: var(--mg-2) auto;
+  color: var(--dark-color);
+}
+.project_content p {
+  margin-top: var(--mg-1);
+  font-size: var(--small-font-size);
+}
+.project_langage_dev {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: var(--mg-2) 0;
+  padding: .4rem;
+  background-color: var(--white-color);
+  border-radius: 20px;
+}
+.project_langage_dev img {
+  padding: .1rem var(--mg-1);
+}
+.project_langage_dev img {
+  width: 1.5rem;
+}
+.project_link a,
+.project_link i {
+  font-size: var(--smaller-font-size);
+}
+.project_link a {
+  color: var(--dark-color);
+  font-weight: var(--font-w-light);
+}
+
+/* Mobile Devises */
+@media screen and (max-width: 830px) {
+  .portfolio_project {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 545px) {
+  .portfolio_project {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

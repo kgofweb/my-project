@@ -12,8 +12,9 @@
 }
 .skills_cadre {
   position: relative;
-  background-color: var(--flight-white-color);
-  border-radius: 20px;
+  /* background-color: var(--flight-white-color); */
+  background-color: var(--white-color);
+  border-radius: 40px;
 }
 /* Animation */
 @property --angle {
@@ -33,11 +34,11 @@
   background-image: conic-gradient(
     from var(--angle),
     transparent 70%,
-    var(--blue-color)
+    var(--blue-color) 
     /* var(--red-color) */
   );
   padding: 3px;
-  border-radius: 20px;
+  border-radius: 40px;
   z-index: -1;
   animation: 8s spin linear infinite;
 }

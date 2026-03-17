@@ -70,7 +70,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: var(--body-font), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family:
+    var(--body-font), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -139,13 +140,13 @@ button {
   color: var(--white-color);
   font-weight: var(--font-w-bold);
   margin-bottom: var(--mb-2);
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   transition: 0.4s;
 }
 
 /* ================ Dark Mode ================ */
 .darkMode {
-  --body-color: #161b1f;
+  --body-color: #181818;
   --title-color: #f1f3f2;
   --text-color: #f1f3f2;
 }
@@ -156,7 +157,7 @@ body.darkMode {
 }
 /* ======== HEADER ======== */
 body.darkMode .header {
-  background-color: var(--body-color);
+  background: rgba(255, 255, 255, 0);
 }
 body.darkMode .header,
 body.darkMode .header_logo,
@@ -210,18 +211,28 @@ body.darkMode .ed_two {
 
 /* ======== SKILLS ======== */
 body.darkMode .skills_cadre {
-  background-color: #1c1f2b;
+  background-color: #212121;
 }
 body.darkMode .front_end div,
 body.darkMode .back_end div,
 body.darkMode .design div,
 body.darkMode .tools div {
-  background: #161b1f;
+  background: #191a1a;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 body.darkMode .skill_title {
-  background: #161b1f;
   color: var(--white-color);
+  background-color: #191a1a;
 }
 
 /* ======== PORTFOLIO ======== */
+body.darkMode .project {
+  background-color: #212121;
+}
+body.darkMode .project_content,
+body.darkMode .project_link a {
+  color: var(--white-color);
+}
+body.darkMode .project_langage_dev {
+  background-color: #000;
+}
